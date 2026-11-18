@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ever Wonder?</title>
+
+<style>
+html{
+    scroll-behavior:smooth;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Georgia, serif;
+}
+
+body{
+    background:#f7f5f1;
+    color:#243856;
+    line-height:1.6;
+}
+
+.top-bar{
+    background:#243856;
+    color:white;
+    text-align:center;
+    padding:10px;
+    font-size:14px;
+}
+
+header{
+    background:white;
+    border-bottom:1px solid #ddd;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.nav{
+    max-width:1400px;
+    margin:auto;
+    padding:25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#4d7cff;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#243856;
+    font-weight:600;
+}
+
+.hero{
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:5rem;
+    margin-bottom:10px;
+}
+
+.est{
+    color:#777;
+    margin-bottom:25px;
+    letter-spacing:3px;
+}
+
+.hero p{
+    font-size:1.4rem;
+    max-width:800px;
+    margin:auto;
+    margin-bottom:40px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.btn{
+    background:#243856;
+    color:white;
+    padding:15px 32px;
+    text-decoration:none;
+    border-radius:4px;
+    transition:.3s;
+}
+
+.btn:hover{
+    opacity:.85;
+}
+
+.btn-light{
+    background:#d9d3ca;
+    color:#243856;
+}
+
+.section{
+    max-width:1400px;
+    margin:auto;
+    padding:80px 30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.image-box{
+    height:500px;
+    border-radius:6px;
+    background:url("https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1600") center/cover;
+}
+
+.text-box h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.text-box p{
+    font-size:1.2rem;
+}
+
+.stats{
+    background:white;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    text-align:center;
+    padding:50px;
+    border-radius:6px;
+    margin-top:60px;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.stat h3{
+    font-size:3rem;
+    color:#243856;
+}
+
+.latest{
+    text-align:center;
+}
+
+.latest h2{
+    font-size:3rem;
+    margin-bottom:40px;
+}
+
+iframe{
+    width:100%;
+    height:600px;
+    border:none;
+    border-radius:8px;
+}
+
+.wonder-box{
+    background:white;
+    padding:40px;
+    border-radius:6px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.wonder-box h3{
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.wonder-box button{
+    background:#243856;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    cursor:pointer;
+    border-radius:4px;
+}
+
+#wonderText{
+    margin-top:25px;
+    font-size:1.4rem;
+    color:#4d7cff;
+    font-weight:bold;
+}
+
+footer{
+    background:#243856;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+    margin-top:80px;
+}
+
+footer h3{
+    margin-bottom:15px;
+}
+
+@media(max-width:900px){
+
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .stats{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+Learning how stuff was made, one questionable joke at a time.
+</div>
+
+<header>
+<div class="nav">
+
+<div class="logo">
+Ever <span>Wonder?</span>
+</div>
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#videos">Videos</a>
+<a href="https://discord.gg/dAKUG26Gwa" target="_blank">Discord</a>
+</div>
+
+</div>
+</header>
+
+<section class="hero">
+
+<h1>Ever Wonder?</h1>
+
+<div class="est">EST. 2026</div>
+
+<p>
+From YouTube to GPS to GTA 6,
+discover how the things you use every day were created in under 15 seconds.
+
+Fast facts. Short stories. Questionable jokes.
+</p>
+
+<div class="buttons">
+
+<a class="btn"
+href="https://www.youtube.com/@EW_everwonder"
+target="_blank">
+Channel
+</a>
+
+<a class="btn btn-light"
+href="https://discord.gg/dAKUG26Gwa"
+target="_blank">
+Join Discord
+</a>
+
+<a class="btn"
+href="https://diegoprogd.github.io/desk-buddy/"
+target="_blank">
+Desk Buddy
+</a>
+
+</div>
+
+</section>
+
+<section class="section" id="about">
+
+<div class="grid">
+
+<div class="image-box"></div>
+
+<div class="text-box">
+
+<h2>How Stuff Was Created</h2>
+
+<p>
+Ever Wonder is a YouTube Shorts channel dedicated to answering one simple question:
+</p>
+
+<br>
+
+<p><strong>"How was that created?"</strong></p>
+
+<br>
+
+<p>
+Every video breaks down the origin of something people use every day and ends with a joke the inventors probably never expected.
+</p>
+
+</div>
+
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<h3>∞</h3>
+<p>Things To Wonder About</p>
+</div>
+
+<div class="stat">
+<h3>15s</h3>
+<p>Average Video</p>
+</div>
+
+<div class="stat">
+<h3>100%</h3>
+<p>Questionable Jokes</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section latest" id="videos">
+
+<h2>Latest Video</h2>
+
+<iframe
+src="https://www.youtube.com/embed/NsiZjkoIgJI"
+allowfullscreen>
+</iframe>
+
+</section>
+
+<section class="section">
+
+<div class="wonder-box">
+
+<h3>Random Word Generator</h3>
+
+<button onclick="generateWonder()">
+Give Me A Word
+</button>
+
+<div id="wonderText">
+Click the button...
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Ever Wonder?</h3>
+
+<p>
+Fun Fact: You're currently on a website dedicated to explaining how other websites, apps and inventions were made.
+</p>
+
+<br>
+
+<p>
+Made By @EW_everwonder on YouTube
+</p>
+
+</footer>
+
+<script>
+const wonders = [
+"Ever","Wonder","YouTube","How","Hello","Adventure","Amazing",
+"Beautiful","Believe","Brilliant","Bright","Calm","Challenge",
+"Change","Choice","Clarity","Comfort","Community","Confidence",
+"Connect","Creative","Curious","Dream","Discover","Energy",
+"Enjoy","Explore","Faith","Family","Focus","Freedom",
+"Friendship","Future","Gather","Gentle","Glow","Goal",
+"Goodness","Grow","Happiness","Harmony","Hope","Imagine",
+"Improve","Inspire","Journey","Joy","Kindness","Knowledge",
+"Laugh","Learn","Listen","Love","Magic","Meaning","Memories",
+"Mindful","Motivation","Nature","New","Notice","Opportunity",
+"Original","Peace","People","Persevere","Possibility","Power",
+"Progress","Purpose","Question","Quiet","Radiant","Reach",
+"Ready","Reflect","Remember","Respect","Rise","Safe",
+"Search","Share","Shine","Smile","Strength","Success",
+"Support","Teamwork","Thankful","Think","Thrive","Together",
+"Trust","Understand","Unique","Unity","Value","Victory",
+"Vision","Welcome","Wisdom","Work","World"
+];
+
+function generateWonder() {
+    const random = wonders[Math.floor(Math.random() * wonders.length)];
+    document.getElementById("wonderText").innerText = random;
+}
+</script>
+
+</body>
+</html>
